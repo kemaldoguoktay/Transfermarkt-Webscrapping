@@ -88,8 +88,6 @@ for (i in 2024:2021) {
 
 final_result <- distinct(final_result)
 
-final_result <- rbind(merge_df, final_result)
-
 head(final_result)
 tail(final_result)
 
