@@ -15,7 +15,7 @@ comp <- comp %>% relocate(league_id, .before = "Area")
 
 head(comp)
 
-standing_table <- function(n, z){
+standing_table <- function(n){
   url <- comp$Standings_URL[n]
   
   tables <- read_html(url, encoding = "UTF-8") %>%
